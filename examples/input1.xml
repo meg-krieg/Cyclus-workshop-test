@@ -1,5 +1,9 @@
 <!-- 1 Source Source, 1 Sink Sink -->
 
+<?xml-model href="../schema/cyclus.rng"
+             type="application/xml"
+             schematypens="http://relaxng.org/ns/structure/1.0"?>
+
 <simulation>
   <control>
     <duration>10</duration>
