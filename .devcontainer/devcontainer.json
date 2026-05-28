@@ -1,7 +1,7 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "mcr.microsoft.com/devcontainers/miniconda:latest",
-    "postCreateCommand": "conda install -y -c conda-forge icu=75 cyclus cycamore",
+    "postCreateCommand": "conda install -y -c conda-forge cyclus cycamore icu",
     "customizations": {
         "vscode": {
             "extensions": [
