@@ -1,0 +1,10 @@
+image: mcr.microsoft.com/devcontainers/miniconda:latest
+
+tasks:
+  - init: conda install -y -c -conda-forge cyclus cycamore
+    command: cyclus --version
+
+vscode:
+  extensions:
+    - redhat.vscode-xml
+    - ms-python.python
