@@ -113,7 +113,7 @@ datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
         <element name="config">
           <choice>
-          @Facility_REFS@
+          <empty/>
           </choice>
         </element>
       </interleave>
@@ -129,7 +129,7 @@ datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
       <element name="config">
         <choice>
-        @Region_REFS@
+        <empty/>
         </choice>
       </element>
 
@@ -155,7 +155,7 @@ datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
 
           <element name="config">
             <choice>
-            @Inst_REFS@
+            <empty/>
             </choice>
           </element>
         </interleave> </element>
