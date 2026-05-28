@@ -1,12 +1,14 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "mcr.microsoft.com/devcontainers/miniconda:latest",
-    "postCreateCommand": "conda install -y -c conda-forge cyclus cycamore",
+    "postCreateCommand": "conda install -y -c conda-forge icu=75 cyclus cycamore",
     "customizations": {
         "vscode": {
             "extensions": [
                 "redhat.vscode-xml",
-                "ms-python.pyhton"
+                "ms-python.python"
+                "qwtel.sqlite-viewer"
+                "alexcvzz.vscode-sqlite"
             ]
         }
     }
