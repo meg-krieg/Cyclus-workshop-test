@@ -1,6 +1,7 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "mcr.microsoft.com/devcontainers/miniconda:latest",
+    "waitFor": "postStartCommand",
     "postCreateCommand": "echo 'source /opt/conda/etc/profile.d/conda.sh' >> ~/.bashrc && echo 'conda activate base' >> ~/.bashrc && conda install -y -c conda-forge cyclus cycamore icu=75",   
     "customizations": {
         "vscode": {
