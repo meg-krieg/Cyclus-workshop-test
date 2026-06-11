@@ -39,7 +39,7 @@ Once you have a GitHub account, and are signed in on
 
 and then press "Create fork" 
 
-![Create Fork]({{ site.baseurl}}{'/img/Create-Fork.png'})
+![Create Fork]({{ site.baseurl}}'/img/Create-Fork.png')
 
 2. Check that you are now on the GitHub page of your fork (the URL should have 
 changed from https://github.com/cyclus/Workshop-Codespace to something like 
