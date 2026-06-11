@@ -1,7 +1,8 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "ghcr.io/cyclus/cymetric_24.04_apt/cymetric:latest",
-    "postCreateCommand": "echo 'export LC_ALL=C; unset LANGUAGE' >> ~/.bashrc",
+    "waitFor": "postStartCommand",
+    "postCreateCommand": "echo 'export LC_ALL=C; unset LANGUAGE' >> ~/.bashrc && /usr/bin/python3 -m pip install --user --upgrade ipykernel --break-system-packages",
     "customizations": {
         "vscode": {
             "extensions": [
