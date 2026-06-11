@@ -1,6 +1,7 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "ghcr.io/cyclus/cymetric_24.04_apt/cymetric:latest",
+    "postCreateCommand": "echo 'export LC_ALL=C; unset LANGUAGE' >> ~/.bashrc",
     "customizations": {
         "vscode": {
             "extensions": [
