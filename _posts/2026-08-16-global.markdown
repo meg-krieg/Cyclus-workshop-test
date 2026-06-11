@@ -16,10 +16,94 @@ date:   2026-08-16 13:00:00 -0500
 
 # First Steps
 
-Instructions go here.
+## [Step 1] Make GitHub Account
+This tutorial relies on GitHub Codespaces to distribute Cyclus. As such, you 
+will need a GitHub account to participate. If you already have an account on 
+GitHub, feel free to skip this step. If not, follow these instructions to make 
+one. You do not need git installed locally for this tutorial.
 
+1. Visit [GitHub](https://github.com)
+2. Click `Sign Up` in the top right corner
+3. Make an account using any of the options presented
+
+## [Step 2] Set up your GitHub Codespace
+Once you have a GitHub account, and are signed in on 
+[GitHub](https://github.com), visit the 
+[Tutorial Repository](https://github.com/cyclus/Workshop-Codespace). From here,
+ you will need to:
+
+1. From the Tutorial Repository page, hit the `Fork` button in the top right of
+ the page to make a copy of the repository associated with your GitHub account.
+
+![Click the Fork Button]({{ site.baseurl }}/img/Codespace-Landing.png)
+
+and then press `Create fork` 
+
+![Create Fork]({{ site.baseurl }}/img/Create-Fork.png)
+
+2. Check that you are now on the GitHub page of your fork (the URL should have 
+changed from https://github.com/cyclus/Workshop-Codespace to something like 
+https://github.com/your-username/Workshop-Codespace). Once you are, press the 
+green `Code` button:
+
+![Code Button]({{ site.baseurl }}/img/Local-Fork.png)
+
+which should bring up a menu that looks like this:
+
+![Codespace Menu]({{ site.baseurl }}/img/Create-Codespace.png)
+
+*Note* that you may need to click the `Codespace` button in the menu that appears
+ to see the above.
+
+3. Click the green `Create Codespace` button within the menu shown above to 
+create a GitHub Codespace. This will open up a new browser tab and place you in
+ a VS Code development environment inside your browser with Cyclus 
+ pre-installed and configured. While it is loading, do not hit any buttons. It 
+ will take up to 10 minutes to fully  initialize. During this initialization, it 
+ will look like this:
+
+![Inside the Codespace]({{ site.baseurl }}/img/Codespace-Launched.png)
+
+
+If you run into a problem with initialization, it should be safe to refresh the
+ page. We have found that this typically solves any issues.
+
+## [Step 3] Tour of VS Code
+VS Code is an integrated development environment which boasts a variety of 
+helpful plugins, and will be the editor we use for this tutorial. There are 
+four main "panes" within VS code:
+
+### File Editor:
+In this pane, you will see open files and can edit their contents.
+
+![File Editor]({{ site.baseurl }}/img/VS-Code-Editor.png)
+
+### Terminal:
+The terminal is where you will be able to interact with the codespace 
+environment and run Cyclus simulations. This is likely the pane you will 
+interact with most after the file editor.
+
+![Terminal]({{ site.baseurl }}/img/VS-Code-Terminal.png)
+
+### File Explorer:
+The file explorer shows all files that are available within the Codespace. From
+ this pane, you are able to navigate the folders in the environment, open, and 
+ create new files.
+
+![File Explorer]({{ site.baseurl }}/img/VS-Code-Explorer.png)
+
+### Copilot
+This pane is optional, and allows users to interact with GitHub copilot. For 
+the purpose of this tutorial, we recommend you close this pane.
+
+![Copilot]({{ site.baseurl }}/img/VS-Code-Copilot.png)
+
+## [Step 4] Verify Cyclus Configuration
+Finally, verify that Cyclus is installed and that your environment is 
+configured correctly by running the following commands.
 
 {% highlight shell %}
+$ git config user.name
 $ which cyclus
 $ cyclus_unit_tests
 {% endhighlight %}
