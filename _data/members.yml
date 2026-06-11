@@ -1,0 +1,9 @@
+- name: Dr. Jane Doe
+  pic: /img/empty_image.png ##get temporary placeholder image
+  description: State University research fellow investigating ---! 
+  social: 
+    - url: https://github.com/cyclus/cyclus ## replace with your github!
+      name: GitHub Page
+      
+## please copy paste this block and fill in withyou
+      
