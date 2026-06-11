@@ -1117,12 +1117,6 @@
             <data type="string"/>
         </element>
     </optional>
-    <optional>
-        <element name="transport_unit">
-            <a:documentation>Name of transport unit that this source uses to ship packages of material. Offers will only be made in shippable quantities of packages. Optional if packaging is used, but use of transport units requires packaging type to also be set</a:documentation>
-            <data type="string"/>
-        </element>
-    </optional>
 </interleave>
 
 </element>
@@ -1618,18 +1612,15 @@
           <element name="name">
             <a:documentation>The name of this package.</a:documentation>
             <text/></element>
-          <optional>
-            <element name="fill_min">
+          <element name="fill_min">
               <a:documentation>The minimum amount of material that is allowed to be shipped in this package.</a:documentation>
-              <data type="double"/></element></optional>
-          <optional>
-            <element name="fill_max">
+              <data type="double"/></element>
+          <element name="fill_max">
               <a:documentation>The maximums amount of material that is allowed to be shipped in this package.</a:documentation>            
-              <data type="double"/></element></optional>
-          <optional>
-            <element name="strategy">
+              <data type="double"/></element>
+          <element name="strategy">
               <a:documentation>The strategy for filling a set of packages.</a:documentation>
-              <text/></element></optional>
+              <text/></element>
         </interleave>
       </element>
     </zeroOrMore>
@@ -1662,4 +1653,3 @@
 </start>
 
 </grammar>
-
