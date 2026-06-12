@@ -1,8 +1,8 @@
-- name: Dr. Jane Doe
+- name: Meghan Krieg
   pic: /img/empty_image.png ##get temporary placeholder image
-  description: State University research fellow investigating ---! 
+  description: Nuclear Engineering PhD candidate at Oregon State University
   social: 
-    - url: https://github.com/cyclus/cyclus ## replace with your github!
+    - url: ## replace with your github!
       name: GitHub Page
 
 ## please copy paste this block and fill in with your info
