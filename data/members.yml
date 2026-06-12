@@ -1,0 +1,8 @@
+- name: Meghan Krieg
+  pic: /img/empty_image.png ##get temporary placeholder image
+  description: Graduate Student at Oregon State University 
+  social: 
+    - url: ## replace with your github!
+      name: GitHub Page
+
+## please copy paste this block and fill in with your info
