@@ -4,9 +4,9 @@ title:  "VS Code Tips and Tricks in Codespaces"
 ---
 
 # Tips and Tricks 
-for working with `VS Code` in GitHub Codespaces
-This pages provides some tips and tricks for using `VS Code` while in a GitHub 
-Codespace. 
+This page has some tips and tricks for working with `VS Code` in GitHub 
+Codespaces This pages provides some tips and tricks for using `VS Code` while 
+in a GitHub Codespace. 
 
 ## Caution
 ### Keyboard Shortcuts Overriden by Browser
@@ -29,7 +29,7 @@ Codespace.
            schematypens="http://relaxng.org/ns/structure/1.0"?>
 ```
 
-  * Type in the top-level `<simulation> </simulation>` set of tags
+  * Type in the top-level `<simulation> </simulation>` set of tags.
   * When your cursor is between those top-level tags, you can type `<` and a 
   menu of options will appear of possible options for the next-level tags (e.g., 
   `<archetypes>`, `<facility>`, etc.). 

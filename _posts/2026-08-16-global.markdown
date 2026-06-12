@@ -6,10 +6,10 @@ date:   2026-08-16 13:00:00 -0500
 
 # Logistics
 
-- Sunday 1-5pm
+- Sunday 1-5pm, Global 2026, Chicago
 - Workshop website: [https://www.ans.org/meetings/global2026/calendar/event-2156/](https://www.ans.org/meetings/global2026/calendar/event-2156/)
 - Please bring a laptop 
-
+- [VS Code Tricks Reference]({{ site.baseurl }}/pages/vscode_tips_tricks)
 # Your Instructors
 
 # How to Ask for Help
