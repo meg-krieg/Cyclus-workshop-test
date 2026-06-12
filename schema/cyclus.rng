@@ -131,7 +131,11 @@
             <a:documentation>The name of a commodity being given priority treatment.</a:documentation>
             <text/> </element>
           <element name="solution_priority"> 
+<<<<<<< Updated upstream
             <a:documentation>The relative solution priority of this commodity. Higher values have higher priorit. (Default: -1)</a:documentation>
+=======
+            <a:documentation>The relative solution priority of this commodity. Higher values have higher priority. (Default: -1)</a:documentation>
+>>>>>>> Stashed changes
             <data type="double"/> </element>
         </interleave>
       </element>
@@ -349,6 +353,10 @@
 <element name="Sink">
 <interleave>
     <element name="in_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>commodities that the sink facility accepts </a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -408,6 +416,10 @@
         </element>
     </optional>
     <element name="incommods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>commodities that the conversion facility accepts</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -476,6 +488,15 @@
         </element>
     </optional>
     <optional>
+<<<<<<< Updated upstream
+=======
+        <element name="initial_tails">
+            <a:documentation>amount of tails stored at the enrichment facility at the beginning of the simulation (kg) (based on recipe)</a:documentation>
+            <data type="double"/>
+        </element>
+    </optional>
+    <optional>
+>>>>>>> Stashed changes
         <element name="max_feed_inventory">
             <a:documentation>maximum total inventory of natural uranium in the enrichment facility (kg)</a:documentation>
             <data type="double"/>
@@ -519,6 +540,10 @@
         </element>
     </optional>
     <element name="fill_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Ordered list of commodities on which to request filler stream material.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -527,6 +552,10 @@
     </element>
     <optional>
         <element name="fill_commod_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>Filler stream commodity request preferences for each of the given filler commodities (same order). If unspecified, default is to use 1.0 for all preferences.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -543,6 +572,10 @@
         <data type="double"/>
     </element>
     <element name="fiss_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Ordered list of commodities on which to requesting fissile stream material.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -551,6 +584,10 @@
     </element>
     <optional>
         <element name="fiss_commod_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>Fissile stream commodity request preferences for each of the given fissile commodities (same order). If unspecified, default is to use 1.0 for all preferences.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -689,6 +726,10 @@
         </element>
     </optional>
     <element name="fuel_incommods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Ordered list of input commodities on which to requesting fuel.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -696,6 +737,10 @@
         </oneOrMore>
     </element>
     <element name="fuel_inrecipes">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Fresh fuel recipes to request for each of the given fuel input commodities (same order).</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -704,6 +749,10 @@
     </element>
     <optional>
         <element name="fuel_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The preference for each type of fresh fuel requested corresponding to each input commodity (same order).  If no preferences are specified, 1.0 is used for all fuel requests (default).</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -712,6 +761,10 @@
         </element>
     </optional>
     <element name="fuel_outcommods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Output commodities on which to offer spent fuel originally received as each particular input commodity (same order).</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -719,6 +772,10 @@
         </oneOrMore>
     </element>
     <element name="fuel_outrecipes">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Spent fuel recipes corresponding to the given fuel input commodities (same order). Fuel received via a particular input commodity is transmuted to the recipe specified here after being burned during a cycle.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -727,6 +784,10 @@
     </element>
     <optional>
         <element name="recipe_change_times">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>A time step on which to change the input-output recipe pair for a requested fresh fuel.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="int"/>
@@ -736,6 +797,10 @@
     </optional>
     <optional>
         <element name="recipe_change_commods">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The input commodity indicating fresh fuel for which recipes will be changed. Same order as and direct correspondence to the specified recipe change times.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="string"/>
@@ -745,6 +810,10 @@
     </optional>
     <optional>
         <element name="recipe_change_in">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The new input recipe to use for this recipe change. Same order as and direct correspondence to the specified recipe change times.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="string"/>
@@ -754,6 +823,10 @@
     </optional>
     <optional>
         <element name="recipe_change_out">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The new output recipe to use for this recipe change. Same order as and direct correspondence to the specified recipe change times.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="string"/>
@@ -788,6 +861,69 @@
         </element>
     </optional>
     <optional>
+<<<<<<< Updated upstream
+=======
+        <element name="initial_core_recipes">
+            <a:documentation>Specify an in-commodity recipe name that should havean initial inventory. This material will be added to the core as an assembly.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="string"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+        <element name="initial_core_amt">
+            <a:documentation>Specify an amount associated with an in-commidity recipeSame order as initial core recipes.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="int"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+        <element name="initial_fresh_recipes">
+            <a:documentation>Specify an in-commodity recipe name that should havean initial inventory. This material will be added to the on-hand fresh fuel inventory as an assembly.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="string"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+        <element name="initial_fresh_amt">
+            <a:documentation>Specify an amount associated with an in-commidity recipeSame order as initial fresh recipes.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="int"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+        <element name="initial_spent_recipes">
+            <a:documentation>Specify an out-commodity recipe name that should havean initial inventory.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="string"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+        <element name="initial_spent_amt">
+            <a:documentation>Specify an amount associated with an out-commidity recipeSame order as initial spent recipes.</a:documentation>
+            <oneOrMore>
+                <element name="val">
+                    <data type="int"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </optional>
+    <optional>
+>>>>>>> Stashed changes
         <element name="cycle_time">
             <a:documentation>The duration of a full operational cycle (excluding refueling time) in time steps.</a:documentation>
             <data type="int"/>
@@ -819,6 +955,10 @@
     </optional>
     <optional>
         <element name="side_products">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>Ordered vector of side product the reactor produces with power</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="string"/>
@@ -828,6 +968,10 @@
     </optional>
     <optional>
         <element name="side_product_quantity">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>Ordered vector of the quantity of side product the reactor produces with power</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -843,6 +987,10 @@
     </optional>
     <optional>
         <element name="pref_change_times">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>A time step on which to change the request preference for a particular fresh fuel type.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="int"/>
@@ -852,6 +1000,10 @@
     </optional>
     <optional>
         <element name="pref_change_commods">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The input commodity for a particular fuel preference change.  Same order as and direct correspondence to the specified preference change times.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="string"/>
@@ -861,6 +1013,10 @@
     </optional>
     <optional>
         <element name="pref_change_values">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>The new/changed request preference for a particular fresh fuel. Same order as and direct correspondence to the specified preference change times.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -892,6 +1048,10 @@
         </element>
     </optional>
     <element name="feed_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Ordered list of commodities on which to request feed material to separate. Order only matters for matching up with feed commodity preferences if specified.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -900,6 +1060,10 @@
     </element>
     <optional>
         <element name="feed_commod_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>Feed commodity request preferences for each of the given feed commodities (same order). If unspecified, default is to use 1.0 for all preferences.</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -936,6 +1100,10 @@
         </element>
     </optional>
     <element name="streams">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Output streams for separations. Each stream must have a unique name identifying the commodity on  which its material is traded, a max buffer capacity in kg (neg values indicate infinite size), and a set of component efficiencies. 'comp' is a component to be separated into the stream (e.g. U, Pu, etc.) and 'eff' is the mass fraction of the component that is separated from the feed into this output stream. If any stream buffer is full, the facility halts operation until space becomes available. The sum total of all component efficiencies across streams must be less than or equal to 1 (e.g. sum of U efficiencies for all streams must be less than or equal to 1).</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="item">
                 <interleave>
@@ -985,6 +1153,10 @@
         </element>
     </optional>
     <element name="in_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>commodities that the sink facility accepts</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -993,6 +1165,10 @@
     </element>
     <optional>
         <element name="in_commod_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>preferences for each of the given commodities, in the same order.Defauts to 1 if unspecified</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -1117,12 +1293,25 @@
             <data type="string"/>
         </element>
     </optional>
+<<<<<<< Updated upstream
+=======
+    <optional>
+        <element name="transport_unit">
+            <a:documentation>Name of transport unit that this source uses to ship packages of material. Offers will only be made in shippable quantities of packages. Optional if packaging is used, but use of transport units requires packaging type to also be set</a:documentation>
+            <data type="string"/>
+        </element>
+    </optional>
+>>>>>>> Stashed changes
 </interleave>
 
 </element>
 <element name="Storage">
 <interleave>
     <element name="in_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>commodities accepted by this facility</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -1131,6 +1320,10 @@
     </element>
     <optional>
         <element name="in_commod_prefs">
+<<<<<<< Updated upstream
+=======
+            <a:documentation>preferences for each of the given commodities, in the same order.Defauts to 1 if unspecified</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="double"/>
@@ -1139,6 +1332,10 @@
         </element>
     </optional>
     <element name="out_commods">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>commodity produced by this facility. Multiple commodity tracking is currently not supported, one output commodity catches all input commodities.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -1408,6 +1605,16 @@
 <element name="GrowthRegion">
 <interleave>
     <element name="growth">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Nameplate capacity demand functions.
+Each demand type must be for a commodity for which capacity can be built (e.g., 'power' from cycamore::Reactors). Any archetype that implements the cyclus::toolkit::CommodityProducer interface can interact with the GrowthRegion in the manner.
+Demand functions are defined as piecewise functions. Each piece must be provided a starting time and function description. Each function description is comprised of a function type and associated parameters.
+  * Start times are inclusive. For a start time :math:`t_0`, the demand function is evaluated on :math:`[t_0, infinity)`.
+  * Supported function types are based on the `cyclus::toolkit::BasicFunctionFactory types &lt;http://fuelcycle.org/cyclus/api/classcyclus_1_1toolkit_1_1BasicFunctionFactory.html#a2f3806305d99a745ab57c300e54a603d&gt;`_.
+  * The type name is the lower-case name of the function (e.g., 'linear', 'exponential', etc.).
+  * The parameters associated with each function type can be found on their respective documentation pages.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="item">
                 <interleave>
@@ -1501,6 +1708,10 @@
 <element name="DeployInst">
 <interleave>
     <element name="prototypes">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Ordered list of prototypes to build.</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -1508,6 +1719,10 @@
         </oneOrMore>
     </element>
     <element name="build_times">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Time step on which to deploy agents given in prototype list (same order).</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="int"/>
@@ -1515,6 +1730,10 @@
         </oneOrMore>
     </element>
     <element name="n_build">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>Number of each prototype given in prototype list that should be deployed (same order).</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="int"/>
@@ -1522,7 +1741,18 @@
         </oneOrMore>
     </element>
     <optional>
+<<<<<<< Updated upstream
         <element name="lifetimes">
+=======
+        <element name="deployyear">
+            <a:documentation>Year to start deploying prototypes.</a:documentation>
+            <data type="int"/>
+        </element>
+    </optional>
+    <optional>
+        <element name="lifetimes">
+            <a:documentation>Lifetimes for each prototype in prototype list (same order). These lifetimes override the lifetimes in the original prototype definition. If unspecified, lifetimes from the original prototype definitions are used. Although a new prototype is created in the Prototypes table for each lifetime with the suffix '_life_[lifetime]', all deployed agents themselves will have the same original prototype name (and so will the Agents tables).</a:documentation>
+>>>>>>> Stashed changes
             <oneOrMore>
                 <element name="val">
                     <data type="int"/>
@@ -1560,6 +1790,10 @@
         </element>
     </optional>
     <element name="prototypes">
+<<<<<<< Updated upstream
+=======
+        <a:documentation>A set of facility prototypes that this institution can build. All prototypes in this list must be based on an archetype that implements the cyclus::toolkit::CommodityProducer interface</a:documentation>
+>>>>>>> Stashed changes
         <oneOrMore>
             <element name="val">
                 <data type="string"/>
@@ -1612,6 +1846,7 @@
           <element name="name">
             <a:documentation>The name of this package.</a:documentation>
             <text/></element>
+<<<<<<< Updated upstream
           <element name="fill_min">
               <a:documentation>The minimum amount of material that is allowed to be shipped in this package.</a:documentation>
               <data type="double"/></element>
@@ -1621,6 +1856,20 @@
           <element name="strategy">
               <a:documentation>The strategy for filling a set of packages.</a:documentation>
               <text/></element>
+=======
+          <optional>
+            <element name="fill_min">
+              <a:documentation>The minimum amount of material that is allowed to be shipped in this package.</a:documentation>
+              <data type="double"/></element></optional>
+          <optional>
+            <element name="fill_max">
+              <a:documentation>The maximums amount of material that is allowed to be shipped in this package.</a:documentation>            
+              <data type="double"/></element></optional>
+          <optional>
+            <element name="strategy">
+              <a:documentation>The strategy for filling a set of packages.</a:documentation>
+              <text/></element></optional>
+>>>>>>> Stashed changes
         </interleave>
       </element>
     </zeroOrMore>
@@ -1653,3 +1902,7 @@
 </start>
 
 </grammar>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
