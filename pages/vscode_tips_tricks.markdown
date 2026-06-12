@@ -23,11 +23,11 @@ Codespace.
   schema for Cyclus to autocomplete and autogenerate parts of the input file: 
   * Make sure to include the following at the top of your input file.
 
-  {% highlight xml %}
+  {%- highlight xml -%}
   <?xml-model href="../schema/cyclus.rng"
              type="application/xml"
              schematypens="http://relaxng.org/ns/structure/1.0"?>
-  {% endhighlight %}
+  {%- endhighlight- %}
 
   * Type in the top-level `<simulation> </simulation>` set of tags
   * When your cursor is between those top-level tags, you can type `<` and a 
