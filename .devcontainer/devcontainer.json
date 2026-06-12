@@ -10,7 +10,7 @@
     },
     "remoteUser": "root",
     "waitFor": "postStartCommand",
-    "postCreateCommand": "echo 'export LC_ALL=C; unset LANGUAGE' >> ~/.bashrc && /usr/bin/python3 -m pip install --user --upgrade ipykernel --break-system-packages",
+    "postCreateCommand": "echo 'export LC_ALL=C; unset LANGUAGE' >> ~/.bashrc && apt-get update && apt-get install -y graphviz && /usr/bin/python3 -m pip install --user --upgrade ipykernel graphviz --break-system-packages",
     "customizations": {
         "vscode": {
             "extensions": [
