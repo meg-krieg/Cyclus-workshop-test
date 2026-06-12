@@ -1,3 +1,4 @@
+---
 layout: page
 title: Instructors 
 permalink: /instructors/
