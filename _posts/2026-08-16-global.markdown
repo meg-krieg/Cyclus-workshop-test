@@ -12,7 +12,7 @@ date:   2026-08-16 13:00:00 -0500
 - What: [Start Here](https://github.com/cyclus/Workshop-Codespace)
 
 ## Helpful Links
-- [Codespace](https://github.com/cyclus/Workshop-Codespace)
+- [Workshop-Codespace Repository](https://github.com/cyclus/Workshop-Codespace)
 - [VS Code Tricks Reference]({{ site.baseurl }}/pages/vscode_tips_tricks)
 - [Self-Guided User Tutorial](https://fuelcycle.org/user/tutorial/index.html)
 - [Collaborative Notes](https://hackmd.io/@munkm/HkYSryc-Mg/edit)
@@ -128,4 +128,6 @@ cyclus_unit_tests
 {% endhighlight %}
 
 
+
+# Footnotes
 [^1]: This Cyclus Workshop can be run from a smartphone, but it is not recommended. 
